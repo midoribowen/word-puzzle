@@ -10,9 +10,9 @@ public class App {
   }
 
   public static String wordPuzzle (String userInput) {
-    String output = "";
 
-    output = userInput.replace("A", "-");
+    userInput = userInput.replace("A", "-");
+
     // char[] userInputArray = userInput.toCharArray();
     // char[] vowelsArray = { 'A' };
     // char[] dashArray = { '-' };
@@ -20,7 +20,7 @@ public class App {
     // userInputArray = userInputArray.replace(vowelsArray, dashArray);
 
     // output = String.valueOf(userInputArray);
-
+    String output = userInput;
     return output;
   }
 }
