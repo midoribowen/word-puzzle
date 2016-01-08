@@ -19,13 +19,13 @@ public class AppUnitTest {
     App app = new App();
     assertEquals("G-T -N-T", app.wordPuzzle("GIT INIT"));
   }
-  //
-  // @Test
-  // public void wordPuzzle_returnsADashForEveryOInUserInput_DASHchDASH() {
-  //   App app = new App();
-  //   assertEquals("-CH-", app.wordPuzzle("OCHO"));
-  // }
-  //
+
+  @Test
+  public void wordPuzzle_returnsADashForEveryOInUserInput_DASHchDASH() {
+    App app = new App();
+    assertEquals("-CH-", app.wordPuzzle("OCHO"));
+  }
+  
   // @Test
   // public void wordPuzzle_returnsADashForEveryUInUserInput_SDASHlDASH() {
   //   App app = new App();
