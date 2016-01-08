@@ -12,10 +12,15 @@ public class App {
   public static String wordPuzzle (String userInput) {
 
     userInput = userInput.replace("A", "-");
+    userInput = userInput.replace("a", "-");
     userInput = userInput.replace("E", "-");
+    userInput = userInput.replace("e", "-");
     userInput = userInput.replace("I", "-");
+    userInput = userInput.replace("i", "-");
     userInput = userInput.replace("O", "-");
+    userInput = userInput.replace("o", "-");
     userInput = userInput.replace("U", "-");
+    userInput = userInput.replace("u", "-");
 
     // char[] userInputArray = userInput.toCharArray();
     // char[] vowelsArray = { 'A' };
