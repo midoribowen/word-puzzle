@@ -14,11 +14,11 @@ public class AppUnitTest {
     assertEquals("-MPTY -GG", app.wordPuzzle("EMPTY EGG"));
   }
 
-  // @Test
-  // public void wordPuzzle_returnsADashForEveryIInUserInput_gDASHtDASHnDASHt() {
-  //   App app = new App();
-  //   assertEquals("G-T -N-T", app.wordPuzzle("GIT INIT"));
-  // }
+  @Test
+  public void wordPuzzle_returnsADashForEveryIInUserInput_gDASHtDASHnDASHt() {
+    App app = new App();
+    assertEquals("G-T -N-T", app.wordPuzzle("GIT INIT"));
+  }
   //
   // @Test
   // public void wordPuzzle_returnsADashForEveryOInUserInput_DASHchDASH() {
