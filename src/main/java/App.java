@@ -12,7 +12,7 @@ public class App {
   public static String wordPuzzle (String userInput) {
     String output = "";
 
-    output = userInput.replace("a", "-");
+    output = userInput.replace("A", "-");
     // char[] userInputArray = userInput.toCharArray();
     // char[] vowelsArray = { 'A' };
     // char[] dashArray = { '-' };
