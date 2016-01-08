@@ -9,5 +9,18 @@ public class App {
     //Spark and Velocity go in here!
   }
 
-  //Programs go down here!
+  public static String wordPuzzle (String userInput) {
+    String output = "";
+
+    output = userInput.replace("a", "-");
+    // char[] userInputArray = userInput.toCharArray();
+    // char[] vowelsArray = { 'A' };
+    // char[] dashArray = { '-' };
+
+    // userInputArray = userInputArray.replace(vowelsArray, dashArray);
+
+    // output = String.valueOf(userInputArray);
+
+    return output;
+  }
 }

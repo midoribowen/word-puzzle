@@ -1,0 +1,29 @@
+1.
+Behavior: When a user inputs a word or sentence, every "A" is replaced with a "-".
+Input: "scrabble"
+Output: "scr-bble"
+
+2.
+Behavior: When a user inputs a word or sentence, every "E" is replaced with a "-".
+Input: ""
+Output: ""
+
+3.
+Behavior: When a user inputs a word or sentence, every "I" is replaced with a "-".
+Input: ""
+Output: ""
+
+4.
+Behavior: When a user inputs a word or sentence, every "O" is replaced with a "-".
+Input: ""
+Output: ""
+
+5.
+Behavior: When a user inputs a word or sentence, every "U" is replaced with a "-".
+Input:
+Output:
+
+6.
+Behavior: User input is case-insensitive.
+Input: ""
+Output: ""
