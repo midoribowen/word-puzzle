@@ -3,21 +3,33 @@ import static org.junit.Assert.*;
 
 public class AppUnitTest {
   @Test
-  public void wordPuzzle_returnsADashForEveryAInUserInput_lDASHsVegDASH() {
+  public void wordPuzzle_returnsADashForEveryAInUserInput_lDASHsGDASHtDASHs() {
     App app = new App();
-    assertEquals("L-S VEG-S", app.wordPuzzle("LAS VEGAS"));
+    assertEquals("L-S G-T-S", app.wordPuzzle("LAS GATAS"));
+  }
+
+  @Test
+  public void wordPuzzle_returnsADashForEveryEInUserInput_DASHmptyDASHgg() {
+    App app = new App();
+    assertEquals("-MPTY -GG", app.wordPuzzle("EMPTY EGG"));
   }
 
   // @Test
-  // public void wordPuzzle_returnsADashForEveryEInUserInput_jDASHpDASHnDASHsDASH() {
+  // public void wordPuzzle_returnsADashForEveryIInUserInput_gDASHtDASHnDASHt() {
   //   App app = new App();
-  //   assertEquals("J-P-N-S-", app.wordPuzzle("JAPANESE"));
+  //   assertEquals("G-T -N-T", app.wordPuzzle("GIT INIT"));
   // }
   //
   // @Test
-  // public void wordPuzzle_returnsADashForEveryIInUserInput_mDASHdorDASH() {
+  // public void wordPuzzle_returnsADashForEveryOInUserInput_DASHchDASH() {
   //   App app = new App();
-  //   assertEquals("M-DOR-", app.wordPuzzle("MIDORI"));
+  //   assertEquals("-CH-", app.wordPuzzle("OCHO"));
+  // }
+  //
+  // @Test
+  // public void wordPuzzle_returnsADashForEveryUInUserInput_SDASHlDASH() {
+  //   App app = new App();
+  //   assertEquals("")
   // }
 
 }

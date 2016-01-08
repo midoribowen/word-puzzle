@@ -12,6 +12,9 @@ public class App {
   public static String wordPuzzle (String userInput) {
 
     userInput = userInput.replace("A", "-");
+    userInput = userInput.replace("E", "-");
+    // userInput = userInput.replace("I", "-");
+    // userInput = userInput.replace("O", "-");
 
     // char[] userInputArray = userInput.toCharArray();
     // char[] vowelsArray = { 'A' };
@@ -20,7 +23,7 @@ public class App {
     // userInputArray = userInputArray.replace(vowelsArray, dashArray);
 
     // output = String.valueOf(userInputArray);
-    String output = userInput;
-    return output;
+    // String output = userInput;
+    return userInput;
   }
 }
