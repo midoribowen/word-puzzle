@@ -15,6 +15,7 @@ public class App {
     userInput = userInput.replace("E", "-");
     userInput = userInput.replace("I", "-");
     userInput = userInput.replace("O", "-");
+    userInput = userInput.replace("U", "-");
 
     // char[] userInputArray = userInput.toCharArray();
     // char[] vowelsArray = { 'A' };

@@ -25,11 +25,11 @@ public class AppUnitTest {
     App app = new App();
     assertEquals("-CH-", app.wordPuzzle("OCHO"));
   }
-  
-  // @Test
-  // public void wordPuzzle_returnsADashForEveryUInUserInput_SDASHlDASH() {
-  //   App app = new App();
-  //   assertEquals("")
-  // }
+
+  @Test
+  public void wordPuzzle_returnsADashForEveryUInUserInput_SDASHlDASH() {
+    App app = new App();
+    assertEquals("S-L-", app.wordPuzzle("SULU"));
+  }
 
 }
