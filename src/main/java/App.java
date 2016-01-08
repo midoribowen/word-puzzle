@@ -13,7 +13,7 @@ public class App {
 
     userInput = userInput.replace("A", "-");
     userInput = userInput.replace("E", "-");
-    // userInput = userInput.replace("I", "-");
+    userInput = userInput.replace("I", "-");
     // userInput = userInput.replace("O", "-");
 
     // char[] userInputArray = userInput.toCharArray();
