@@ -15,7 +15,7 @@ public class App {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
-    get("/output", (request, response) -> {
+    get("/puzzle", (request, response) -> {
       HashMap model = new HashMap();
       model.put("template", "templates/output.vtl");
 
