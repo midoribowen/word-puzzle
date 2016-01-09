@@ -21,12 +21,12 @@ public class AppIntegrationTest extends FluentTest {
     assertThat(pageSource()).contains("Word Puzzle");
   }
 
-  // @Test public void testNameHere() {
-  //   goTo("http://localhost:4567/");
-  //   fill("#tag").with("userInput");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("//userInput//")
-  //   //This tests if a tagged fill is outputing correctly with the user input in the right place.
-  // }
-  // }
+  @Test public void inputTest() {
+    goTo("http://localhost:4567/");
+    fill("#userInput").with("SuPeRcAlI FrAgIlIsYiCeXpIaLi DoCiOuS");
+    submit(".btn");
+    assertThat(pageSource()).contains("S-P-Rc-l- Fr-g-l-sY-C-Xp--L- D-C---S");
+  }
+
+
 }

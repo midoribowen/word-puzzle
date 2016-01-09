@@ -14,22 +14,34 @@ public class App {
       model.put("template", "templates/index.vtl");
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
-    
+
+    get("/output", (request, response) -> {
+      HashMap model = new HashMap();
+      model.put("template", "templates/output.vtl");
+
+      String userInput = request.queryParams("userInput");
+      String output = wordPuzzle(userInput);
+
+      model.put("userInput", userInput);
+      model.put("output", output);
+      return new ModelAndView(model, layout);
+    }, new VelocityTemplateEngine());
+
   }
 
   public static String wordPuzzle (String userInput) {
 
-    userInput = userInput.replace("A", "-");
-    userInput = userInput.replace("a", "-");
-    userInput = userInput.replace("E", "-");
-    userInput = userInput.replace("e", "-");
-    userInput = userInput.replace("I", "-");
-    userInput = userInput.replace("i", "-");
-    userInput = userInput.replace("O", "-");
-    userInput = userInput.replace("o", "-");
-    userInput = userInput.replace("U", "-");
-    userInput = userInput.replace("u", "-");
+    String output = userInput.replace("A", "-");
+    output = output.replace("a", "-");
+    output = output.replace("E", "-");
+    output = output.replace("e", "-");
+    output = output.replace("I", "-");
+    output = output.replace("i", "-");
+    output = output.replace("O", "-");
+    output = output.replace("o", "-");
+    output = output.replace("U", "-");
+    output = output.replace("u", "-");
 
-    return userInput;
+    return output;
   }
 }

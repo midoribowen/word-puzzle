@@ -7,7 +7,7 @@ public class AppUnitTest {
     App app = new App();
     assertEquals("L-S G-T-S", app.wordPuzzle("LAS GATAS"));
   }
-
+  
   @Test
   public void wordPuzzle_returnsADashForEveryEInUserInput__mpty_gg() {
     App app = new App();

@@ -1,4 +1,11 @@
 <h2>Enter a sentence below and see if a friend can guess what it says!</h2>
-<form class="form-control" action="/puzzle" method="post">
-  
+
+<form action="/output" method="get">
+  <div class="form-group">
+    <label for="userInput">Enter your sentence here:</label>
+    <input id="userInput" name="userInput" class="form-control" type="text">
+  </div>
+
+
+  <button id="submit" type="submit" class="btn btn-success">Calculate!</button>
 </form>
