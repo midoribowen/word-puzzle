@@ -17,7 +17,7 @@ public class App {
 
     get("/puzzle", (request, response) -> {
       HashMap model = new HashMap();
-      model.put("template", "templates/output.vtl");
+      model.put("template", "templates/puzzle.vtl");
 
       String userInput = request.queryParams("userInput");
       String output = wordPuzzle(userInput);
